@@ -12,7 +12,7 @@ El técnico llega al domicilio sin saber qué falló antes en esa dirección. Re
 
 ## Ver el sitio
 
-Publicado con GitHub Pages en `https://TU-USUARIO.github.io/relevo/`
+Publicado con GitHub Pages en `(https://ignaciois2.github.io/relevo/)`
 
 ## Stack
 
