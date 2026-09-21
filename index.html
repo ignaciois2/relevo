@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relevo — el historial del cliente antes de tocar el timbre</title>
+  <meta name="description" content="Relevo entrega al técnico de terreno la orden de trabajo y el historial completo del cliente en el celular, antes de llegar al domicilio.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="cabecera">
+    <div class="contenedor cabecera__barra">
+      <a class="marca" href="#inicio">
+        <span class="marca__punto"></span>
+        Relevo
+      </a>
+      <nav class="menu" aria-label="Navegación principal">
+        <ul class="menu__lista">
+          <li><a href="#problema">El problema</a></li>
+          <li><a href="#solucion">La solución</a></li>
+          <li><a href="#pasos">Cómo funciona</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============ MAIN ============ -->
+  <main id="inicio">
+
+    <!-- Portada -->
+    <section class="portada">
+      <div class="contenedor portada__caja">
+        <p class="portada__antetitulo">Aplicación móvil para técnicos de terreno</p>
+        <h1 class="portada__titulo">El historial del cliente, antes de tocar el timbre</h1>
+        <p class="portada__bajada">
+          Cada mañana un técnico sale con siete visitas y sin saber qué le pasó antes a
+          ninguno de esos clientes. Relevo le pone la orden de trabajo, el historial de fallas
+          y el material sugerido en el celular, desde que arranca la camioneta.
+        </p>
+        <div class="portada__acciones">
+          <a class="boton boton--principal" href="#solucion">Ver la solución</a>
+          <a class="boton boton--secundario" href="#problema">Conocer el problema</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problema -->
+    <section class="seccion-problema" id="problema">
+      <div class="contenedor">
+        <h2 class="seccion__titulo">Lo que pasa hoy en terreno</h2>
+        <p class="seccion__bajada">
+          Entrevistamos a técnicos de soporte de un proveedor de internet regional. La ruta del
+          día les llega por WhatsApp y el historial del cliente vive en un sistema al que solo
+          entra la central. Tres cosas se repitieron en todas las entrevistas.
+        </p>
+
+        <ul class="dolores">
+          <li class="dolor">
+            <h3 class="dolor__titulo">Llega sin contexto</h3>
+            <p class="dolor__texto">
+              El técnico se entera del problema recién cuando el cliente se lo cuenta en la
+              puerta. Si hubo visitas anteriores, no lo sabe.
+            </p>
+          </li>
+          <li class="dolor">
+            <h3 class="dolor__titulo">Depende de la central</h3>
+            <p class="dolor__texto">
+              Para confirmar cualquier dato tiene que llamar por radio o teléfono, con el cliente
+              esperando al lado. Son entre cinco y diez minutos perdidos por visita.
+            </p>
+          </li>
+          <li class="dolor">
+            <h3 class="dolor__titulo">Repite el diagnóstico</h3>
+            <p class="dolor__texto">
+              Sin el registro de lo anterior, vuelve a probar lo que ya se probó. Una de cada
+              cuatro visitas termina en una segunda visita por la misma falla.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Solución -->
+    <section class="seccion-solucion" id="solucion">
+      <div class="contenedor solucion__caja">
+
+        <div class="solucion__texto">
+          <h2 class="seccion__titulo">Relevo: la ficha llega antes que el técnico</h2>
+          <p>
+            Relevo es una aplicación móvil de tres pantallas. El técnico abre la ruta del día,
+            entra a la visita que le toca y encuentra ahí mismo qué se hizo antes, qué material
+            va a necesitar y dónde escribir su diagnóstico. Al cerrar, el registro queda
+            disponible para el siguiente que vaya a esa dirección.
+          </p>
+          <ul class="beneficios">
+            <li>Historial de fallas anteriores en la misma ficha de la visita</li>
+            <li>Material sugerido según lo que ya se usó en esa dirección</li>
+            <li>Cierre en dos toques, sin llamar a la central</li>
+            <li>Pensado para usarse de pie, con una mano y a pleno sol</li>
+          </ul>
+        </div>
+
+        <figure class="solucion__figura">
+          <img
+            src="img/prototipo-relevo.svg"
+            alt="Las tres pantallas de Relevo: mi ruta de hoy, ficha de la visita y visita cerrada"
+            width="1000" height="760">
+          <figcaption>Prototipo interactivo en Figma · versión 1.0</figcaption>
+        </figure>
+
+      </div>
+
+      <!-- Cómo funciona -->
+      <div class="contenedor pasos" id="pasos">
+        <h2 class="seccion__titulo">El flujo completo, en tres pantallas</h2>
+        <ol class="pasos__lista">
+          <li class="paso">
+            <span class="paso__numero">1</span>
+            <h3 class="paso__titulo">Mi ruta de hoy</h3>
+            <p class="paso__texto">
+              Las visitas del día ordenadas por hora, con el tipo de falla y una marca amarilla
+              en las que son reiteradas.
+            </p>
+          </li>
+          <li class="paso">
+            <span class="paso__numero">2</span>
+            <h3 class="paso__titulo">Ficha de la visita</h3>
+            <p class="paso__texto">
+              Qué pasó antes en esa dirección, qué material conviene llevar y el campo para
+              escribir el diagnóstico de hoy.
+            </p>
+          </li>
+          <li class="paso">
+            <span class="paso__numero">3</span>
+            <h3 class="paso__titulo">Visita cerrada</h3>
+            <p class="paso__texto">
+              El resumen de lo que se hizo y un botón directo a la siguiente visita de la ruta.
+            </p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="pie">
+    <div class="contenedor pie__caja">
+      <p class="pie__marca">Relevo</p>
+      <p class="pie__texto">
+        Proyecto final del Diplomado UX/UI · Módulos 1 a 5 · Ignacio Soto Maureira
+      </p>
+      <p class="pie__texto">&copy; 2026 Equipo Relevo. Proyecto académico sin fines comerciales.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
